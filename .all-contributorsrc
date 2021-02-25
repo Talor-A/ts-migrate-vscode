@@ -9,6 +9,18 @@
   "imageSize": 100,
   "commit": true,
   "commitConvention": "none",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "Talor-A",
+      "name": "Talor Anderson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11509865?v=4",
+      "profile": "https://github.com/Talor-A",
+      "contributions": [
+        "doc",
+        "code",
+        "infra"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
