@@ -6,6 +6,9 @@ jobs:
   check-label:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
       - name: Prepare repository
         run: git fetch --unshallow --tags
 
@@ -14,8 +17,6 @@ jobs:
         with:
           node-version: 12.x
 
-      - name: Checkout
-        uses: actions/checkout@v2
         
       - name: fire check-label
         run: |
