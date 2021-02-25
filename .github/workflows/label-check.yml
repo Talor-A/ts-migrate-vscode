@@ -21,4 +21,4 @@ jobs:
       - name: fire check-label
         run: |
           yarn install --frozen-lockfile
-          yarn auto pr-check
+          yarn auto pr-check --url  https://github.com/${{github.repository}}/actions/runs/${{github.run_id}}
