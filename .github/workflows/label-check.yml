@@ -6,7 +6,18 @@ jobs:
   check-label:
     runs-on: ubuntu-latest
     steps:
+      - name: Prepare repository
+        run: git fetch --unshallow --tags
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
+        
       - name: fire check-label
-        run: yarn auto pr-check
+        run: |
+          yarn install --frozen-lockfile
+          yarn auto pr-check
