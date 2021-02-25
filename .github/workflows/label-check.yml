@@ -1,0 +1,26 @@
+on: 
+  pull_request:
+    types: [labeled, unlabeled, opened, synchronize, reopened]
+name: Run `check-label` when a PR's labels are changed
+jobs:
+  check-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Prepare repository
+        run: git fetch --unshallow --tags
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+        
+      - name: fire check-label
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          yarn install --frozen-lockfile
+          yarn auto pr-check --url  https://github.com/${{github.repository}}/actions/runs/${{github.run_id}}
