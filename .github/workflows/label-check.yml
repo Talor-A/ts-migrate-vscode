@@ -19,6 +19,8 @@ jobs:
 
         
       - name: fire check-label
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           yarn install --frozen-lockfile
           yarn auto pr-check --url  https://github.com/${{github.repository}}/actions/runs/${{github.run_id}}
