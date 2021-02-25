@@ -29,9 +29,7 @@
     "pretest": "yarn compile && yarn lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
-    "version": "yarn version `auto version` -m 'Bump version to: %s [skip ci]'",
-    "publish": "yarn publish && git push --follow-tags --set-upstream origin $branch",
-    "release": "./scripts/release.sh"
+    "release": "auto shipit"
   },
   "devDependencies": {
     "@auto-it/all-contributors": "^10.16.7",
