@@ -2,7 +2,7 @@
   "name": "tsmigratevscode",
   "displayName": "ts-migrate for VS Code",
   "description": "wrapper around airbnb/ts-migrate for VS Code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.53.0"
   },
@@ -31,7 +31,7 @@
     "test": "node ./out/test/runTest.js",
     "version": "npm version `auto version` -m 'Bump version to: %s [skip ci]'",
     "publish": "npm publish && git push --follow-tags --set-upstream origin $branch",
-    "release": "auto changelog && npm run version && npm run publish && auto release"
+    "release": "./scripts/release.sh"
   },
   "devDependencies": {
     "@auto-it/all-contributors": "^10.16.7",
