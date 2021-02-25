@@ -1,4 +1,4 @@
-export PATH=$(npm bin):$PATH
+export PATH=$(yarn bin):$PATH
 
 VERSION=`auto version`
 
@@ -8,8 +8,8 @@ if [ ! -z "$VERSION" ]; then
   auto changelog
 
   ## Publish Package
-  npm version $VERSION -m "Bump version to: %s [skip ci]"
-  npm publish
+  yarn version $VERSION -m "Bump version to: %s [skip ci]"
+  yarn publish
 
   ## Create GitHub Release
   git push --follow-tags --set-upstream origin $branch
