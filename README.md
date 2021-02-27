@@ -3,7 +3,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-this extension wraps airbnb/ts-migrate. It's still in early alpha development.
+this extension wraps [airbnb/ts-migrate](https://github.com/airbnb/ts-migrate/). It's still in early alpha development.
 
 current features:
 - migrate one file at a time using default plugins.
