@@ -2,7 +2,7 @@
   "name": "tsmigratevscode",
   "displayName": "ts-migrate for VS Code",
   "description": "wrapper around airbnb/ts-migrate for VS Code",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.53.0"
   },
