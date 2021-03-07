@@ -1,3 +1,15 @@
+# v0.0.7 (Sun Mar 07 2021)
+
+#### 🐛 Bug Fix
+
+- Update README.md [#10](https://github.com/Talor-A/ts-migrate-vscode/pull/10) ([@Talor-A](https://github.com/Talor-A))
+
+#### Authors: 1
+
+- Talor Anderson ([@Talor-A](https://github.com/Talor-A))
+
+---
+
 # v0.0.4 (Thu Feb 25 2021)
 
 #### 🐛 Bug Fix
